@@ -74,9 +74,9 @@ namespace TaskManagerPresenter
                     _tasksManagerWindow.EnableDeleteCompletedAndAllButton(tasks.Count != 0);
                 }
             }
-            catch (Exception)
+            catch 
             {
-                _tasksManagerWindow.ShowMessage("Ошибка при обновлении списка задач");
+                _tasksManagerWindow?.ShowMessage("Ошибка при обновлении списка задач");
             }
         }
 
