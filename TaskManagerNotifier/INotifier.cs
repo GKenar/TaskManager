@@ -5,6 +5,6 @@ namespace TaskManagerNotifier
     public interface INotifier
     {
         event Action ShowMainWindow;
-        void OnTasksDataUpdated();
+        void Run();
     }
 }
