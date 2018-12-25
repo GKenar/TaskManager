@@ -1,14 +1,15 @@
 ﻿using System.Reflection;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // Управление общими сведениями о сборке осуществляется с помощью 
 // набора атрибутов. Измените значения этих атрибутов, чтобы изменить сведения,
 // связанные со сборкой.
-[assembly: AssemblyTitle("TaskManagerModel")]
+[assembly: AssemblyTitle("TaskManagerDevelopmentTests")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Microsoft")]
-[assembly: AssemblyProduct("TaskManagerModel")]
+[assembly: AssemblyProduct("TaskManagerDevelopmentTests")]
 [assembly: AssemblyCopyright("Copyright © Microsoft 2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -19,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Следующий GUID служит для идентификации библиотеки типов, если этот проект будет видимым для COM
-[assembly: Guid("a59a8d5b-c19b-4220-b3de-a44d26a50bda")]
+[assembly: Guid("b8c9c273-1ea1-4c47-ae20-e88ecdc83328")]
 
 // Сведения о версии сборки состоят из следующих четырех значений:
 //

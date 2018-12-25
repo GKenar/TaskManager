@@ -1,10 +1,10 @@
 ﻿using System;
-using NUnit.Framework;
-using TaskManagerModel.Components;
 using System.Collections.Generic;
-using TaskManagerModel;
-using TaskManagerCommon.Components;
 using System.Linq;
+using NUnit.Framework;
+using TaskManagerCommon.Components;
+using TaskManagerModel;
+using TaskManagerModel.Components;
 
 namespace TaskManagerUnitTest
 {

@@ -1,12 +1,12 @@
-﻿using NUnit.Framework;
-using TaskManagerModel.Components;
-using TaskManagerModel;
-using TaskManagerCommon.Components;
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using FluentValidation;
+using NUnit.Framework;
+using TaskManagerCommon.Components;
+using TaskManagerModel;
+using TaskManagerModel.Components;
 using TaskManagerUnitTest.Fakes;
 
 namespace TaskManagerUnitTest

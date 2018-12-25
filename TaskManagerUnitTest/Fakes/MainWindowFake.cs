@@ -10,12 +10,12 @@ namespace TaskManagerUnitTest.Fakes
     {
         public void Initialize()
         {
-            throw new NotImplementedException();
+            
         }
 
         public void Show()
         {
-            throw new NotImplementedException();
+            
         }
 
         public bool TaskSelected { get; }

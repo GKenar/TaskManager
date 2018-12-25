@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using TaskManagerCommon.Components;
-using TaskManagerModel.Components;
 
 namespace TaskManagerModel
 {

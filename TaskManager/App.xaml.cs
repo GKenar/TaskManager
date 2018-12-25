@@ -31,21 +31,8 @@ namespace TaskManager
 
             Exit += delegate { ((IDisposable) notifier).Dispose(); };
 
+            notifier.Run();
             taskManagerPresenter.Initialize();
-
-            /*          Random rnd = new Random();
-                        for (int i = 0; i < 100; i++)
-                        {
-                            taskManagerPresenter.AddTask(new UserTaskView
-                            {
-                                Name = rnd.Next(0, 1000).ToString(),
-                                Description = rnd.Next(0, 1000).ToString(),
-                                IsNotified = false,
-                                Priority = (TaskPriority)Enum.Parse(typeof(TaskPriority), rnd.Next(1, 3).ToString()),
-                                TaskDate = DateTime.Today,
-                                NotifyDate = DateTime.Today
-                            });
-                        }*/
         }
 
         class PresenterSubscriber

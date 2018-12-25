@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using TaskManagerModel;
 using System.Linq;
 using TaskManagerCommon.Components;
+using TaskManagerModel;
 using TaskManagerPresenter.Components;
 using TaskManagerView;
 using TaskManagerView.Components;

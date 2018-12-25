@@ -3,9 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
+using System.Windows.Data;
 using System.Windows.Input;
+using System.Windows.Media;
 using TaskManagerCommon.Components;
 using TaskManagerView.Components;
+using FilterEventArgs = TaskManagerView.Components.FilterEventArgs;
 
 namespace TaskManagerView
 {
@@ -90,7 +94,7 @@ namespace TaskManagerView
 
         public void SetHighlightDates(List<DateTime> dates) //Оптимизировать добавление (месяц; при добавлении\изменении\удалении)
         {
-            Style style = new Style(typeof(System.Windows.Controls.Primitives.CalendarDayButton));
+            Style style = new Style(typeof(CalendarDayButton));
 
             dates = dates.GroupBy(d => d.Date).Select(d => d.Key).ToList();
 
@@ -98,11 +102,11 @@ namespace TaskManagerView
             {
                 DataTrigger dataTrigger = new DataTrigger
                 {
-                    Binding = new System.Windows.Data.Binding("Date"),
+                    Binding = new Binding("Date"),
                     Value = date
                 };
 
-                dataTrigger.Setters.Add(new Setter(BackgroundProperty, System.Windows.Media.Brushes.AntiqueWhite));
+                dataTrigger.Setters.Add(new Setter(BackgroundProperty, Brushes.AntiqueWhite));
                 style.Triggers.Add(dataTrigger);
             }
 
@@ -200,7 +204,7 @@ namespace TaskManagerView
 
         private void Calendar_PreviewMouseUp(object sender, MouseButtonEventArgs e)
         {
-            if (sender != null && Mouse.Captured is System.Windows.Controls.Primitives.CalendarItem)
+            if (sender != null && Mouse.Captured is CalendarItem)
                 Mouse.Capture(null);
         }
 

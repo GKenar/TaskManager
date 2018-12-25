@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Linq;
-using TaskManagerModel;
 using TaskManagerCommon.Components;
 
 namespace TaskManagerModel.Components

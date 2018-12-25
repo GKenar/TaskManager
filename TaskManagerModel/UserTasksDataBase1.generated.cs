@@ -4,10 +4,11 @@
 //    Changes to this file may cause incorrect behavior and will be lost if the code is regenerated.
 // </auto-generated>
 //---------------------------------------------------------------------------------------------------
+
 using System;
 using System.Linq;
-
 using LinqToDB;
+using LinqToDB.Data;
 using LinqToDB.Mapping;
 
 namespace TaskManagerModel
@@ -17,7 +18,7 @@ namespace TaskManagerModel
 	/// Data Source    : UserTasks
 	/// Server Version : 3.14.2
 	/// </summary>
-	public partial class UserTasksDB : LinqToDB.Data.DataConnection
+	public partial class UserTasksDB : DataConnection
 	{
 		public ITable<UserTask> UserTasks { get { return this.GetTable<UserTask>(); } }
 

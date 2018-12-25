@@ -1,7 +1,7 @@
 ﻿using System;
-using LinqToDB;
 using System.Collections.Generic;
 using System.Linq;
+using LinqToDB;
 
 namespace TaskManagerModel.Components
 {

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
@@ -34,7 +35,7 @@ namespace TaskManagerNotifier
             _notifyIcon = new NotifyIcon
             {
                 Text = "TaskManager",
-                Icon = new System.Drawing.Icon("appicon.ico"),
+                Icon = new Icon("appicon.ico"),
                 Visible = true
             };
             _notifyIcon.DoubleClick += NotifyIconOnDoubleClick;
@@ -84,7 +85,7 @@ namespace TaskManagerNotifier
 
         public void Dispose()
         {
-            if(!_task.IsCompleted)
+            if(_task != null && !_task.IsCompleted)
                 _taskCancellationTokenSource.Cancel();
 
             _notifyIcon.Dispose();
