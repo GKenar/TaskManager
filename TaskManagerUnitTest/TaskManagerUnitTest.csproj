@@ -51,6 +51,7 @@
       <HintPath>..\packages\NUnit.3.11.0\lib\net45\nunit.framework.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.ComponentModel.Primitives, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
@@ -75,6 +76,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="BoolConverterTests.cs" />
     <Compile Include="Fakes\DataModelContexFake.cs" />
     <Compile Include="Fakes\DataModelContexFactoryFake.cs" />
     <Compile Include="DataModelTests.cs" />
@@ -84,7 +86,6 @@
     <Compile Include="Fakes\TaskManagerWindowFactoryFake.cs" />
     <Compile Include="Fakes\TasksFilterFake.cs" />
     <Compile Include="PresenterTests.cs" />
-    <Compile Include="TasksControlPresenterTests.cs" />
     <Compile Include="TasksFilterTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -4,7 +4,7 @@ using System.Windows.Data;
 
 namespace TaskManagerView.Components
 {
-    class BoolConverter : IValueConverter
+    public class BoolConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, 
             object parameter, CultureInfo culture)
