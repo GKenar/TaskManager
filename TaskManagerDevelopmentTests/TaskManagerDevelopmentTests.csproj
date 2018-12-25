@@ -43,11 +43,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="InjectedDevTests.cs" />
+    <Compile Include="StandaloneDevTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TaskManagerCommon\TaskManagerCommon.csproj">
+      <Project>{fa99bb1e-b5c8-4a4a-a474-f682b2598e0f}</Project>
+      <Name>TaskManagerCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TaskManagerModel\TaskManagerModel.csproj">
+      <Project>{a59a8d5b-c19b-4220-b3de-a44d26a50bda}</Project>
+      <Name>TaskManagerModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TaskManagerNotifier\TaskManagerNotifier.csproj">
+      <Project>{708afdd5-d157-4527-a6d1-63c552e10804}</Project>
+      <Name>TaskManagerNotifier</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TaskManagerPresenter\TaskManagerPresenter.csproj">
+      <Project>{b2782879-ed48-4a69-9e7f-2dcb7db3f4e3}</Project>
+      <Name>TaskManagerPresenter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TaskManagerView\TaskManagerView.csproj">
+      <Project>{67626404-1D89-4A45-86B1-FADD3A2D1CAC}</Project>
+      <Name>TaskManagerView</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

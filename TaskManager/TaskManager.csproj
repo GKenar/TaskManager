@@ -103,6 +103,10 @@
       <Project>{fa99bb1e-b5c8-4a4a-a474-f682b2598e0f}</Project>
       <Name>TaskManagerCommon</Name>
     </ProjectReference>
+    <ProjectReference Include="..\TaskManagerDevelopmentTests\TaskManagerDevelopmentTests.csproj">
+      <Project>{b8c9c273-1ea1-4c47-ae20-e88ecdc83328}</Project>
+      <Name>TaskManagerDevelopmentTests</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TaskManagerModel\TaskManagerModel.csproj">
       <Project>{a59a8d5b-c19b-4220-b3de-a44d26a50bda}</Project>
       <Name>TaskManagerModel</Name>

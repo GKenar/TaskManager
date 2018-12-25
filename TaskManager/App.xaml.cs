@@ -40,14 +40,12 @@ namespace TaskManager
             private readonly IPresenter _presenter;
             private readonly IMainWindow _mainWindow;
             private readonly ITasksControlPresenter _tasksControlPresenter;
-            private readonly INotifier _notifier;
 
             public PresenterSubscriber(IPresenter presenter, ITasksControlPresenter tasksControlPresenter, IDataModel dataModel, IMainWindow mainWindow, INotifier notifier)
             {
                 _presenter = presenter;
                 _mainWindow = mainWindow;
                 _tasksControlPresenter = tasksControlPresenter;
-                _notifier = notifier;
 
                 dataModel.TasksDbUpdated += DataModel_TasksDBUpdated;
 
@@ -64,7 +62,7 @@ namespace TaskManager
 
                 _tasksControlPresenter.UserTaskUpdated += TasksControlPresenterOnUserTaskUpdated;
 
-                _notifier.ShowMainWindow += NotifierOnShowMainWindow;
+                notifier.ShowMainWindow += NotifierOnShowMainWindow;
             }
 
             private void NotifierOnShowMainWindow()
