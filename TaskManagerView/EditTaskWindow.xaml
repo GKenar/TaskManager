@@ -47,7 +47,8 @@
                 </Binding>
             </TextBox.Text>
         </TextBox>
-        <TextBox TextWrapping="Wrap"
+        <ScrollViewer Grid.Column="1" Grid.Row="1" ScrollViewer.VerticalScrollBarVisibility="Auto">
+            <TextBox TextWrapping="Wrap"
             x:Name="textboxDescription" 
             MaxLength="250"  
             Grid.Column="1" 
@@ -60,6 +61,7 @@
                 </Binding>
             </TextBox.Text>
         </TextBox>
+        </ScrollViewer>
         <ComboBox
             x:Name="comboboxPriority" 
             ItemsSource="{Binding Source={components:EnumToListSource {x:Type shared:TaskPriority}}}"

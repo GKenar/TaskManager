@@ -15,7 +15,6 @@
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
         <ListBox 
             x:Name="TaskList" 
@@ -30,8 +29,9 @@
                 <DataTemplate>
                     <Border BorderBrush="Black" BorderThickness="2" Padding="0">
                         <StackPanel>
-                            <TextBlock Text="{Binding Path=Name}" HorizontalAlignment="Center"/>
-                            <TextBlock Text="{Binding Path=Description}"/>
+                            <TextBlock  MaxHeight="340" MaxWidth="240" TextWrapping="Wrap" Text="{Binding Path=Name}" HorizontalAlignment="Center" FontWeight="Bold"/>
+                            <TextBlock  MaxHeight="340" MaxWidth="240" TextWrapping="Wrap" Text="{Binding Path=Description}" HorizontalAlignment="Left"/>
+                            <TextBlock  Text="Дата" HorizontalAlignment="Left"/>
                         </StackPanel>
                     </Border>
                 </DataTemplate>
@@ -41,17 +41,17 @@
             x:Name="ButtonDelete" 
             Click="ButtonDelete_OnClick"
             Grid.Column="1" 
-            Grid.Row="1" 
+            Grid.Row="0" 
             Content="Удалить"/>
         <Button 
             x:Name="ButtonDeleteAll" 
             Click="ButtonDeleteAll_OnClick"
-            Grid.Column="1" Grid.Row="2" 
+            Grid.Column="1" Grid.Row="1" 
             Content="Удалить всё"/>
         <Button 
             Click="ButtonDeleteCompleted_OnClick"
             x:Name="ButtonDeleteCompleted"
-            Grid.Column="1" Grid.Row="3"
+            Grid.Column="1" Grid.Row="2"
             Content="Удалить завершённые"/>
     </Grid>
 </Window>
