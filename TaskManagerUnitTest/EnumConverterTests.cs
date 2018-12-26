@@ -29,7 +29,7 @@ namespace TaskManagerUnitTest
         }
 
         [Test]
-        public void ConvertInvalidTest()
+        public void ConvertInvalidValueTest()
         {
             var converter = new EnumConverter();
             var parameter = typeof(TestEnum);
@@ -67,7 +67,7 @@ namespace TaskManagerUnitTest
         }
 
         [Test]
-        public void ConvertBackInvalidTest()
+        public void ConvertBackInvalidValueTest()
         {
             var converter = new EnumConverter();
             var parameter = typeof(TestEnum);
