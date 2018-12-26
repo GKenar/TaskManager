@@ -31,7 +31,10 @@
                         <StackPanel>
                             <TextBlock  MaxHeight="340" MaxWidth="240" TextWrapping="Wrap" Text="{Binding Path=Name}" HorizontalAlignment="Center" FontWeight="Bold"/>
                             <TextBlock  MaxHeight="340" MaxWidth="240" TextWrapping="Wrap" Text="{Binding Path=Description}" HorizontalAlignment="Left"/>
-                            <TextBlock  Text="Дата" HorizontalAlignment="Left"/>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Foreground="DarkGray" Text="Дата: " HorizontalAlignment="Left"/>
+                                <TextBlock Foreground="DarkGray" Text="{Binding Path=TaskDate}" HorizontalAlignment="Left"/>
+                            </StackPanel>
                         </StackPanel>
                     </Border>
                 </DataTemplate>

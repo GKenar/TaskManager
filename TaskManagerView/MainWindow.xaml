@@ -67,8 +67,15 @@
                     <Border BorderBrush="Black" BorderThickness="2" Padding="0">
                         <StackPanel>
                             <TextBlock MaxHeight="340" MaxWidth="340" TextWrapping="Wrap"  Text="{Binding Path=Name}" HorizontalAlignment="Center" FontWeight="Bold"/>
-                            <TextBlock MaxHeight="340" MaxWidth="340" TextWrapping="Wrap" Text="{Binding Path=Description}" HorizontalAlignment="Left"/>
-                            <TextBlock Text="Дата" HorizontalAlignment="Left"/>
+                            <TextBlock MaxHeight="340" MaxWidth="340" TextWrapping="Wrap" Text="{Binding Path=Description}" HorizontalAlignment="Left" Margin="0,5" FontSize="14"/>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Foreground="DarkGray" Text="Дата: " HorizontalAlignment="Left"/>
+                                <TextBlock Foreground="DarkGray" Text="{Binding Path=TaskDate}" HorizontalAlignment="Left"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Foreground="DarkGray" Text="Приоритет: " HorizontalAlignment="Left"/>
+                                <TextBlock Foreground="DarkGray" Text="{Binding Path=Priority}" HorizontalAlignment="Left"/>
+                            </StackPanel>
                         </StackPanel>
                     </Border>
                 </DataTemplate>
